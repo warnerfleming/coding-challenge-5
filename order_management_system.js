@@ -5,3 +5,8 @@ const inventory = [
     {name: `fries`, price: `4`, quantity: `100`},
     {name: `soda`, price: `3`, quantity: `60`},
 ]
+
+//Task 2
+let order = []
+
+
