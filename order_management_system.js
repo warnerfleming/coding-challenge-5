@@ -57,3 +57,13 @@ function completeOrder (customerName) {
     }
 
 console.log(completeOrder(`Mark`))
+
+//Task 6 
+function checkPendingOrders () {
+    orders.forEach(orders =>
+    { if (orders.status = `Pending`){
+        console.log(orders)
+    }}
+    )
+}
+console.log(checkPendingOrders(orders))
