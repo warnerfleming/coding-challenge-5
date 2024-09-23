@@ -7,6 +7,31 @@ const inventory = [
 ]
 
 //Task 2
-let order = []
+let orders = []
 
 
+//Task 3
+
+
+function placeOrder (customerName, itemsOrdered) {
+itemsOrdered.forEach(item => {
+let product = inventory.find(product => product.name === item.name);
+if (!product || product.quantity < item.quantity) {
+    return (`Error: Not enough stock available`)
+} else {
+    return product.quantity -= item.quantity
+
+}})
+
+orders.push({
+customerName,
+items: itemsOrdered,
+status: `Pending`
+})}
+
+
+placeOrder(`Mark`, [{name: `pizza`, quantity: 5}])
+console.log(orders)
+console.log(inventory)
+
+//Task 4 
