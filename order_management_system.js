@@ -46,3 +46,14 @@ let order = (`Mark`, [{name: `pizza`, quantity: 5},
                       {name: `soda`, quantity:10}])
 
 console.log(calculateOrderTotal(order))
+
+//Task 5
+function completeOrder (customerName) {
+    let order = orders.find(order => order.name === customerName)
+    if (order.status = `Pending`) {
+        return order.status = `Completed`
+    } else 
+       return `Error`
+    }
+
+console.log(completeOrder(`Mark`))
