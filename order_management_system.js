@@ -35,3 +35,14 @@ console.log(orders)
 console.log(inventory)
 
 //Task 4 
+
+function calculateOrderTotal (order) {
+    let product = inventory.find(product => product.name === order.name);
+    order.reduce((total, item) => total + (item.quantity*item.price), 0)
+
+}
+
+let order = (`Mark`, [{name: `pizza`, quantity: 5},
+                      {name: `soda`, quantity:10}])
+
+console.log(calculateOrderTotal(order))
